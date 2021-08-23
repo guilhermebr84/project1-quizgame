@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+:root{
+background-image: url(./images/bg1.jpg);
+background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    color:  rgb(205, 181, 102);
+    font-family: Bangers;
+}
+
+h1 {
+    font-size: 3rem;
+    color: goldenrod;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color:goldenrod;
+    margin-bottom: 3rem
+}
+
+.container{
+    width: 100 vw;
+    height: 100 vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn{
+    font-size: 3rem;
+    padding: 3rem;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: darkred;
+    color: rgb(205, 181, 102);
+    background: linear-gradient(45deg, gray) 0%, darkred 100%;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.603);
+    transition: transform 300ms;
+    transform: scale(1.0);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(45deg, gray) 0%, darkred 100%;
+}
+
+#highscore-btn:hover{
+    box-shadow: 0 0.5rem 1.5rem silver;
+}
+
+.fa-medal{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
