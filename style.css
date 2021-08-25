@@ -1,34 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 :root{
-background-image: url(./images/bg1.jpg);
-background-size: cover;
+background: linear-gradient(to top, silver, black);
 }
 
 * {
     box-sizing: border-box;
-    margin: 10px;
-    padding: 10px;
-    font-size: 25px;
-    color:  rgb(205, 181, 102);
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+    color:  orange;
     font-family: Bangers;
 }
 
 h1 {
-    font-size: 3rem;
-    color: goldenrod;
+    font-size: 4rem;
+    color: gold;
     margin-bottom: 5rem;
 }
 
 h2 {
     font-size: 2rem;
-    color:goldenrod;
-    margin-bottom: 3rem
+    color:gold;
+    margin-bottom: 5rem
 }
 
 .container{
-    width: 100 vw;
-    height: 100 vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,27 +50,31 @@ h2 {
     justify-content: center;
 }
 
+.text-center{
+    justify-content: center;
+}
+
 .hidden {
     display: none;
 }
 
 .btn{
-    font-size: 3rem;
-    padding: 3rem;
+    font-size: 2.5rem;
+    padding: 2rem 0;
     width: 30rem;
     text-align: center;
     margin-bottom: 1rem;
-    text-decoration: darkred;
-    color: rgb(205, 181, 102);
-    background: linear-gradient(45deg, gray) 0%, darkred 100%;
-    border-radius: 5px;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.603);
+    background: linear-gradient(90deg, darkslateblue 0%, darkgray 100%);
+    border-radius: 4px;
 }
 
 .btn:hover{
     cursor: pointer;
-    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.603);
+    box-shadow: 0 0.5rem 2rem darkblue;
     transition: transform 300ms;
-    transform: scale(1.0);
+    transform: scale(1.10);
 }
 
 .btn[disabled]:hover {
@@ -81,7 +84,7 @@ h2 {
 }
 
 #highscore-btn {
-    background: linear-gradient(45deg, gray) 0%, darkred 100%;
+    background: linear-gradient(90deg, gray 0%, darkred 100%);
 }
 
 #highscore-btn:hover{
@@ -89,6 +92,49 @@ h2 {
 }
 
 .fa-medal{
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-left: 1rem;
+}
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.5rem 0 darkslateblue;
+}
+
+input::placeholder {
+    color:ghostwhite;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: ghostwhite;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: black;
 }
