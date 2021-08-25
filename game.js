@@ -7,19 +7,27 @@ const choices = Array.from(document.querySelectorAll('.choice-text'))
 const progressText = document.getElementsById('#progessText');
 const scoreText = document.getElementsById('#score');
 const progressBarFull = document.getElementsById('#progressBarFull');
+const jumpNext = document.getElementById('jump')
 
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
+let allQuestions = []; // calling availableQuestions as allQuestions
 let jump = 3;
 
 const scorePoints = 10;
 const maxQuestions = 10;
 
+startGame () {
+    questionCounter = 0;
+    jump = 3;
+    
+}
+
 class Quiz {
-    constructor () {
+    constructor (question, choices, score) {
+
         
     }
 }
