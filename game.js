@@ -1,36 +1,109 @@
-questions.map
-
 let level = ['easy','medium','hard']
 let subject = ['general', 'science', 'history', 'economics', 'math']
-const question = document.getElementsById('question');
+const question = document.getElementById('question');
 const choices = Array.from(document.querySelectorAll('.choice-text'))
-const progressText = document.getElementsById('#progessText');
-const scoreText = document.getElementsById('#score');
-const progressBarFull = document.getElementsById('#progressBarFull');
-const jumpNext = document.getElementById('jump')
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progressBarFull');
 
-let currentQuestion = {};
+/*let currentQuestion = 0;
 let acceptingAnswers = true;
-let score = 0;
+
 let questionCounter = 0;
-let allQuestions = []; // calling availableQuestions as allQuestions
-let jump = 3;
+let allQuestions = []; // calling availableQuestions as allQuestions*/
 
 const scorePoints = 10;
 const maxQuestions = 10;
+let score = 0;
 
-startGame () {
-    questionCounter = 0;
-    jump = 3;
+
+class Quiz {
+    constructor () {
+        this.currentQuestion = 0
+        this.score = 0
+        this.correctAnswer = correctAnswer     
+    }
+    updateQuestion (){
+        question.innerText = questions[this.currentQuestion].question // acessando o objeto 
+    }
+    updateChoices (){
+       /* for (i = 0; i < choices.length; i++){
+            choices.innerText = questions[this.currentQuestion].answer
+        }*/
+        choices[0].innerText = questions[this.currentQuestion].answer1
+        choices[1].innerText = questions[this.currentQuestion].answer2
+        choices[2].innerText = questions[this.currentQuestion].answer3
+        choices[3].innerText = questions[this.currentQuestion].answer4
+    }
+    wrongOrRight (event){
+        if (event.target.firstChild.innerText == questions[this.currentQuestion].correctAnswer){
+            return event.target.classList.add("bar-color-right")
+        } 
+        else {
+            return event.target.classList.add("bar-color-wrong")
+    }
+}
+    nextQuestion (nextQuestion){ //proxima questao
+        nextQuestion = currentQuestion +=1
+        
+
+    }
+    timer (){ //temporizador
+        setTimeout(function() {
+            let 
+        })
+    }
+    incDecScore (increaseScore) { //pontuação
+        if (this.wrongOrRight() === true) {
+            increaseScore = score +=1
+        } 
+        else {
+            return score
+        }
+    }
+    endGame (){ //condição de fim de jogo
+        if (this.currentQuestion > 10) {
+            
+        }
+
+    }
     
 }
 
-class Quiz {
-    constructor (question, choices, score) {
-
-        
-    }
+function startGame () {
+let quiz = new Quiz
+quiz.updateQuestion()
+quiz.updateChoices()
 }
+
+startGame()
+
+document.addEventListener ('click', (event) => { //document para detectar o click addEventListener
+if (event.target.classList.contains("choice-container")) {
+    quiz.wrongOrRight()
+    quiz.nextQuestion()
+}
+
+
+})
+
+function endGame () {
+    let btnRestart = " ";
+    if (score >= 90){
+    score.textContent = 'Parabéns, ganhou bolsa na Ironhack!'
+   
+    }
+    else if (score <= 89 && score >=55) {
+    score.textContent = 'Muito bom... continue assim, mas não ganhou bolsa na Ironhack, quem sabe na próxima.'
+
+    }
+    else {
+    score.textContent = 'Vc pode melhorar...'
+   
+    }
+    btnRestart = document.createElement('button-restart');
+    btnRestart.textContent = 'Iniciar novo jogo';
+}2
+
 
 /*// TENTATIVA 01
 

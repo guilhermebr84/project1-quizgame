@@ -54,6 +54,14 @@ h2 {
     justify-content: center;
 }
 
+.bar-color-right{
+    background-color: green;
+}
+
+.bar-color-wrong{
+    background-color: red;
+}
+
 .hidden {
     display: none;
 }

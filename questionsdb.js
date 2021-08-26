@@ -5,7 +5,7 @@ let questions = [
         answer2: 'Manaus',
         answer3: 'Rio Vermelho',
         answer4: 'Rio Branco',
-        correctAnswer: 4,
+        correctAnswer: 'D',
         subject: 'general',
         level: 'easy'
     },
@@ -15,7 +15,7 @@ let questions = [
         answer2: 'segundo',
         answer3: 'terceiro',
         answer4: 'quarto',
-        correctAnswer: 2,
+        correctAnswer: 'B',
         subject: 'general',
         level: 'medium'
     },
@@ -25,7 +25,7 @@ let questions = [
         answer2: 'oriental',
         answer3: 'meridional',
         answer4: 'ocidental',
-        correctAnswer: 1,
+        correctAnswer: 'A',
         subject: 'general',
         level: 'hard'
     },
@@ -35,7 +35,7 @@ let questions = [
         answer2: 'fotomeiose',
         answer3: 'fotossintese',
         answer4: 'sintese orgânica',
-        correctAnswer: 3,
+        correctAnswer: 'C',
         subject: 'science',
         level: 'easy'
     },
@@ -45,7 +45,7 @@ let questions = [
         answer2: 'É a tendência de um átomo expelir um próton',
         answer3: 'É a capacidade de um átomo de gerar um campo magnético negativo',
         answer4: 'É a capacidade de um neutron atrair prótons e elétrons',
-        correctAnswer: 1,
+        correctAnswer: 'A',
         subject: 'science',
         level: 'medium'
     },
@@ -55,7 +55,7 @@ let questions = [
         answer2: 'gaseificação',
         answer3: 'acessibilidade',
         answer4: 'compressibilidade',
-        correctAnswer: 4,
+        correctAnswer: 'D',
         subject: 'science',
         level: 'hard'
     },
@@ -65,7 +65,7 @@ let questions = [
         answer2: 'Princesa Isabel',
         answer3: 'Getúlio Vargas',
         answer4: 'João VI',
-        correctAnswer: 2,
+        correctAnswer: 'B',
         subject: 'history',
         level: 'easy'
     },
@@ -75,7 +75,7 @@ let questions = [
         answer2: 'Imperialismo',
         answer3: 'Cortina de Ferro',
         answer4: 'Muro de Berlim',
-        correctAnswer: 3,
+        correctAnswer: 'C',
         subject: 'history',
         level: 'medium'
     },
@@ -85,7 +85,7 @@ let questions = [
         answer2: 'Roma',
         answer3: 'Jerusalém',
         answer4: 'Beirute',
-        correctAnswer: 1,
+        correctAnswer: 'A',
         subject: 'history',
         level: 'hard'
     },
@@ -95,7 +95,7 @@ let questions = [
         answer2: 'Desconto sobre operações financeiras',
         answer3: 'Valor adicional cobrado em operações financeiras',
         answer4: 'Nome do tipo de transferência de valores entre instituições financeiras',
-        correctAnswer: 3,
+        correctAnswer: 'C',
         subject: 'economics',
         level: 'easy'
     },
@@ -105,7 +105,7 @@ let questions = [
         answer2: 'inversamente relacionados.',
         answer3: 'relacionados à microeconomia regional.',
         answer4: 'sob custódia de uma autarquia.',
-        correctAnswer: 2,
+        correctAnswer: 'B',
         subject: 'economics',
         level: 'medium'
     },
@@ -115,7 +115,7 @@ let questions = [
         answer2: 'Teoria Comportamental Mundial',
         answer3: 'Equilibrio de Nash',
         answer4: 'Evolução Keyneasiana',
-        correctAnswer: 1,
+        correctAnswer: 'A',
         subject: 'economics',
         level: 'hard'
     },
@@ -125,7 +125,7 @@ let questions = [
         answer2: '90',
         answer3: '9',
         answer4: '81',
-        correctAnswer: 4,
+        correctAnswer: 'D',
         subject: 'math',
         level: 'easy'
     },
@@ -135,7 +135,7 @@ let questions = [
         answer2: 'zero',
         answer3: 'um',
         answer4: 'indefinido',
-        correctAnswer: 1,
+        correctAnswer: 'A',
         subject: 'math',
         level: 'medium'
     },
@@ -145,7 +145,7 @@ let questions = [
         answer2: '1.068',
         answer3: '176',
         answer4: '1.048',
-        correctAnswer: 3,
+        correctAnswer: 'C',
         subject: 'math',
         level: 'hard'
     }
